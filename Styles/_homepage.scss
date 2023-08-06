@@ -1,0 +1,241 @@
+#homepage {
+  min-height: 100vh;
+  position: relative;
+  background-color: $base-bg;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.hamburger-menu {
+  display: none;
+}
+
+.bubble1 {
+  position: absolute;
+  border-radius: 50%;
+  width: 790px;
+  height: 833px;
+  left: -450px;
+  top: -600px;
+  background: rgba(3, 176, 118, 0.541);
+  filter: blur(200px);
+  z-index: -2;
+}
+.bubble2 {
+  position: absolute;
+  width: 977.51px;
+  height: 1020.46px;
+  right: -700px;
+  top: 600px;
+  background: rgba(28, 151, 121, 0.52);
+  border-radius: 50%;
+  filter: blur(200px);
+  transform: rotate(-36.78deg);
+  z-index: -2;
+}
+#navbar {
+  margin-top: 1rem;
+  min-height: 6rem;
+  overflow-y: hidden;
+}
+.navbar-items {
+  // min-height: 6rem;
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.nav-menu {
+  display: flex;
+  font-family: "secondaryFont";
+
+  .menu {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem;
+    cursor: pointer;
+    width: 5rem;
+    transition: all 0.05s ease;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 1rem 0;
+
+    &:hover {
+      border-bottom: 2px solid #1fe59e;
+    }
+  }
+}
+.nav-logo {
+  max-height: 3rem;
+  padding: 1rem;
+  img {
+    width: 100%;
+  }
+}
+
+.nav-menu-items {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+.nav-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    transform: scale(1.3);
+    margin: 1rem;
+    background-color: white;
+    border-radius: 6px;
+    transition: all 0.05s ease;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}
+
+.homepage-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  margin: auto;
+  padding: 0rem 3rem;
+  padding-bottom: 10rem;
+}
+
+.homepage-left-container {
+  overflow: hidden;
+  color: white;
+  max-width: 40%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  .kizuki-heading {
+    h1 {
+      font-size: 6rem;
+      font-family: "primaryFont";
+      letter-spacing: -5px;
+      font-weight: bold;
+      display: flex;
+      color: $primaryGreen;
+      overflow: hidden;
+      strong {
+        color: white;
+        margin-left: 1rem;
+      }
+    }
+  }
+  p {
+    font-family: "BOOKFont";
+    max-width: 100%;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    color: #c0c6c3;
+    line-height: 1.2rem;
+  }
+  .header-btns {
+    margin-top: 1rem;
+    font-family: "secondaryFont";
+
+    button {
+      border: none;
+      outline: none;
+      min-width: 10rem;
+      padding: 0.5rem 2rem;
+      border-radius: 5rem;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+    .cta1 {
+      background-color: #191d1b;
+      color: #34dc97;
+      margin-right: 2rem;
+      transition: all 0.5s ease;
+      &:hover {
+        box-shadow: rgba(52, 220, 150, 0.123) 5px 2px 30px;
+      }
+    }
+    .cta2 {
+      background-color: #1fe59e;
+      color: #191d1b;
+      margin-right: 2rem;
+      transition: all 0.5s ease;
+      &:hover {
+        box-shadow: rgba(52, 220, 151, 0.123) 5px 2px 30px;
+      }
+    }
+  }
+}
+
+.nft-slider {
+  min-height: 80vh;
+  position: relative;
+  flex: 2;
+  img {
+    position: absolute;
+    top: 20%;
+    &:nth-child(1) {
+      right: 50%;
+    }
+    &:nth-child(2) {
+      z-index: 2;
+      top: 20%;
+      right: 20%;
+    }
+    &:nth-child(3) {
+      right: 0rem;
+    }
+  }
+}
+
+.homepage-socials {
+  position: absolute;
+  right: 4rem;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  img {
+    margin: 1rem;
+  }
+}
+
+.hamburger-item-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.726);
+  min-height: 100vh;
+  min-width: 100vw;
+  z-index: 10;
+  backdrop-filter: blur(2px);
+}
+
+.hambueger-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: "primaryFont";
+    min-height: 3rem;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    div {
+      &:hover {
+        border-bottom: 2px solid white;
+      }
+    }
+  }
+}

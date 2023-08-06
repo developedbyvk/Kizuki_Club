@@ -1,0 +1,60 @@
+//Global Stylings
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a110c;
+  overflow-x: hidden;
+}
+//Scrollbar Styles
+::-webkit-scrollbar {
+  width: 10px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(31, 229, 158);
+  border-radius: 5px;
+  min-height: 15rem;
+}
+//move to top btn styles
+.move-top {
+  display: none;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 50;
+  max-width: 2.5rem;
+  position: fixed;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  border-radius: 50%;
+}
+
+//Fonts
+@font-face {
+  src: url(../fonts/GothamMedium.woff);
+  font-family: "primaryFont";
+}
+@font-face {
+  src: url(../fonts/GOTHAMLIGHT.woff);
+  font-family: "secondaryFont";
+}
+@font-face {
+  src: url(../fonts/GOTHAMBOOK.woff);
+  font-family: "BOOKFont";
+}
+@font-face {
+  src: url(../fonts/GOTHAMBLACK.woff);
+  font-family: "BLACKFont";
+}
+
+//deafult base colors
+$base-bg: #0a110c;
+$primaryGreen: #1fe59e;
